@@ -1,0 +1,46 @@
+.card{
+    display: grid;
+    grid-template-columns:50px min-content;
+    grid-gap: 1em 1em;
+    grid-template-areas: 
+        "image content"
+        "image content"
+        "body body"
+        "body .";
+    max-width: 120px;
+    height: 150px;
+    border:1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0px;
+    border-radius: 4px;
+    transition: all 3s;
+    font-size: 1em;
+}
+.cardImg{
+    grid-area: 'image';
+    align-self: start;
+    width:100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.player_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    grid-area: 'content';
+}
+.player_Bet,
+.player_wins,
+.player_price{
+    grid-area: 'body';
+    display: flex;
+    align-items: center;
+}
+.winnerBorder{
+    border: 1px solid green;
+    transform: scale(1.2);
+}
+.loserBorder{
+    border:1px solid red;
+}

@@ -1,0 +1,21 @@
+.searchInput{
+    padding:.5em;
+    outline-width: 0;
+    border: none;
+    background: inherit;
+    font-size: 1em;
+    transform: scale(1);
+  transition: transform 250ms;
+}
+.search{
+  display: flex;
+  align-items: center;
+  padding:.5em;  
+  border-bottom: 1.5px solid #ddd;
+  width: 200px;
+  margin-left: 1em;
+  
+}
+.searchInput:focus {
+    transform: scale(1.1);
+}

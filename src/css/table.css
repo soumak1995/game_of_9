@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap');
+table {
+    border-collapse: collapse;
+    width: 95%;
+    font-size: .725rem;
+    margin: 1em;
+  }
+  table th{
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-collapse: separate;
+      border-spacing: 5px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+      background-color: #E3E6EA  ;
+      color: white;
+  }
+  .Container{
+     display: grid;
+     grid-template-rows: 165px 1em 1fr .125em 50px;
+  }
+  table td,
+  table th {
+    border-bottom: 1px solid #ddd;
+    padding: .125em;
+    text-align: center;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+
+  .player_table{
+    grid-row: 3;
+  }
+  .globalFilter{
+     grid-row: 1;
+     align-self: end;
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: flex-end;
+     justify-content: space-between;
+
+  }
+  .header_info> h5{
+    font-family: 'Roboto';
+    font-weight: 600;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    color:#F31177;
+  }
+  .player_tableButton{
+     grid-row: 5;
+     justify-self: end;
+     margin-right: 1em;
+     margin-bottom: 2em;
+  }
+  .strong{
+    font-weight:600 ;
+    margin-right: 1em;
+    font-size: .725rem;
+  }
+
+  .laying_img{
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 25%;
+    align-self:flex-end;
+    justify-self: flex-end;
+  }
+ 
