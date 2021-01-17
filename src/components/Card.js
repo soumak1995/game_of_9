@@ -24,6 +24,12 @@ function Card({player}) {
                         <span>💰</span>
                         <p>{player?.Price}</p>
               </div>
+              <div className={`${player?.Winner?'card-winner':'card_loser'}`}>
+                  {
+                      player?.Winner? <p>Winner</p>:<p>Lose</p>
+                  }
+                    
+              </div>
                 
         </div>
     )
